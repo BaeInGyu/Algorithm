@@ -19,3 +19,6 @@ def solution(arr):
 	#Divide the sum by the number of elements in the array and return
 	answer = answer/(i+1)        
 	return answer
+
+arr = [1,2,3,4]
+solution(arr)
