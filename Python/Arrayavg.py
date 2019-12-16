@@ -14,8 +14,11 @@ def solution(arr):
 	answer = 0
 	#The index of the array is i and the elements are j
 	for i,j in enumerate(arr):
-		#The total sum of the array elements is obtained.
+		#The total sum of the array elements is obtained
 		answer += arr[i]
 	#Divide the sum by the number of elements in the array and return
 	answer = answer/(i+1)        
 	return answer
+
+arr = [1,2,3,4]
+solution(arr)
