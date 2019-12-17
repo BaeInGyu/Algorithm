@@ -17,29 +17,20 @@
 # [1,1,3,3,0,1,1]	[1,3,0,1]
 # [4,4,4,3,3]	[4,3]
 
-
 def solution(arr):
+    #Result array declaration to be stored
     answer = []
+    #Declaring and initializing the variables I for index access
     i = 0
+    #Insert value arr[0] in answer array
     answer.append(arr[0])
     while i < len(arr)-1:
+        #If the current index in arr and the next index values are different
         if arr[i] != arr[i+1]:
+            #Insert next index value in answer array
             answer.append(arr[i+1])
         i+=1
     return answer
 
 arr =[1,1,3,3,0,1,1]
 solution(arr)
-
-'''
-def solution(arr):
-    answer = [] 
-    for i in arr:
-        if answer[-1:] == [i]: 
-            continue
-        answer.append(i)
-    return answer
-
-arr =[1,1,3,3,0,1,1]
-solution(arr)
-'''
