@@ -17,11 +17,15 @@
 
 
 def solution(s):
+    #Convert all strings to lowercase
     lower = s.lower()
+    #If the number of y characters and the number of p characters are the same return true
     if lower.count('y') == lower.count('p'):
                    return True
+    #If 0 is obtained by adding y and p characters return true
     elif (lower.count('y')+lower.count('p')) == 0:
                    return True
+    #Else return false
     else:
                    return False
 
