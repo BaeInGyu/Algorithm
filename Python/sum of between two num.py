@@ -17,14 +17,23 @@
 
 def solution(a,b):
     answer = 0
+    #If B is greater than A
     if a <b:
+        #Initialize integer values from a to b on i
         for i in range(a,b+1):
+            #Initializing the sum of i in the answer
             answer += i
+    #If A and B are the same number,
     elif a == b:
+        #Initialize the value of a in the answer
         answer = a
+    #If A is greater than B
     else:
+        #Initialize integer values from a to b on i
         for i in range(a,b-1,-1):
+            ##Initializing the sum of i in the answer
             answer +=i
+    #Returns an answer
     return answer
 
 solution(3,5)
